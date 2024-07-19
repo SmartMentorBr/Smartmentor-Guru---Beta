@@ -1,0 +1,14 @@
+<div class="content">
+    <swiper [config]="config">
+      <div class="swiper-wrapper">
+        <div class="container swiper-slide" *ngFor="let slide of options;let idx = index">
+          <div class="circle">{{idx + 1}}</div>
+          <div class="desc">{{slide.desc}}</div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </swiper>
+</div>
+<!-- <div class="controllers">
+  <span *ngFor="let btn of options; let idx = index;" [ngClass]="{'active' : btn.active}" class="dot" (click)="changeStep(idx)"></span>
+</div> -->

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "fonts.scss";
+* , p{
+    font-family: Ubuntu;
+}
+.selected{
+    text-decoration: none;
+}
+body {
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+button {
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        // position: absolute;
+        // width: 100%;
+    }
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

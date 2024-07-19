@@ -1,0 +1,43 @@
+.plans-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #e7455f;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+    width: 100%;
+    height: 40%;    
+}
+
+.plans-assets {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    .plans-asset {
+        text-align: center;
+        border-radius: 40px;
+        border: 20px 20px;
+        width: 20%;
+        height: 20%;
+        
+        p {
+            color: grey;
+        }
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .plans-header {
+        display: none;
+    }
+    .plans-assets {
+        display: none;
+    }
+}

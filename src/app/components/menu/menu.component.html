@@ -1,0 +1,46 @@
+<div class="menu-container">
+  <div class="logo">
+    <img src="assets/logo-smartmentor-branco.png" class="desktop-logo" width="200" height="100">
+    <img src="assets/logo-smartmentor.png" class="mobile-logo" width="275">
+  </div>
+  <div class="web-menu">
+    <div class="about">
+      <button class="drop-down" (click)="toggleDropdown()">Sobre a SmartMentor
+        <i class="fa fa-chevron-down"></i>
+      </button>
+      <div class="dropdown-content" *ngIf="showDropDown">
+        <ul>
+          <li>Como funciona</li>
+          <li (click)="openApartofDialog()">Quero ser mentor</li>
+          <li (click)="openFaqDialog()">FAQ</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Fale com o guru e se registre que vamos esclarecer suas dúvidas -->
+    <ul class="main-navigator">
+      <li><a routerLink='/Home' routerlinkActive='selected'>Guru</a></li>
+      <li (click)="openDialog('Em breve mostraremos os planos atualizados da Smart')">Planos</li>
+      <li (click)="openDialog('Em breve mostraremos nossos top mentors')">Mentores</li>
+      <li (click)="openDialog('Em breve mostraremos os depoimentos dos nossos clientes da Smart')">Depoimentos</li>
+      <li (click)="openDialog('Fale diretamente com o guru. Alguém do nosso suporte esntrará em contato')">Contato</li>
+      <li><a href="https://smartmentor.co/" target="_blank">Blog</a></li>
+    </ul>
+    <!-- <button class="login">Login</button>  -->
+  </div>
+  <button class="sandwich" (click) = "openMenuMobile()">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="mobile-menu" *ngIf="showMenuMobile"> 
+    <button class="exit-menu" (click)= "closeMenuMobile()"> x </button>
+    <button class="login-mobile"> Login </button> 
+    <ul class="mobile-navigator">
+      <li (click)="openDialog('Em breve estaremos disponibilizando uma área de acesso para seus desafios. Enquanto isso, fale com nosso guru, nosso suporte entrará em contato')"> <img src="assets/desafios.png" class="desafios"> Meus Desafios </li>
+      <li (click)="openDiagnoseDialog()"> <img src="assets/diagnostico.png" class="diagnosticos"> Diagnosticos </li>
+      <li (click)="openGuru()"> <img src="assets/guru.png" class="guru"> Guru </li>
+      <li (click)="openDialog('Em breve mostraremos os planos atualizados da Smart')"> <img src="assets/planos.png" class="planos"> Planos </li>
+      <li (click)="openApartofDialog()"> <img src="assets/mentor.png" class="mentor"> Quero ser um mentor </li>
+      <li (click)="openFaqDialog()"> <img src="assets/ajuda.png" class="ajuda"> Ajuda </li>
+    </ul>
+  </div>
+  
+</div>

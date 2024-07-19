@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="title">
+      <h1><b>{{'smart_solutions_for_any_challenge' | translate}}</b></h1>
+      <h3> Nós pesquisamos, procuramos e conectamos<br>os seus desafios a soluçoes e profissionais do mercado.</h3>
+      <div class="search">
+        <input type="text" placeholder="Qual seu desafio hoje?">
+        <button (click)="openGuru()"><i class="fa fa-search"></i></button>
+      </div>
+  </div>
+
+  <div class="how-it-works" id="how-it-works">
+    <img src="assets/Frame.png" alt="">
+    <p class="hiw">Nosso Guru tem a visão geral de todos os mentores e soluções disponíveis para resultados mais rápidos e econômicos.<a href="#">Saiba mais</a></p>
+    <strong> Entenda como funciona</strong>
+    <smart-carousel class="carousel"></smart-carousel>
+    <div class="one">
+      <div class="two">
+        <div class="circle"> 1 </div>
+        <p>Faça o cadastro e adicione o briefing do seu desafio. Escolha o segmento e a área de atuação. Não se preocupe, as suas informações estão seguras.</p>
+      </div>
+      <div class="two">
+        <div class="circle">2</div>
+        <p>Iremos pesquisar pela solução em nosso banco de dados, e também em nossa rede de mentores. Você será informado do prazo para receber sua solução.</p>
+      </div>
+      <div class="two">
+        <div class="circle">3</div>
+        <p> Você receberá um aviso de que a sua solução foi encontrada, junto com ela você receberá também a lista de mentores que ajudou na solução.</p>
+      </div>
+      <div class="two">
+        <div class="circle">4</div>
+        <p> Dessa forma você pode agendar pessoalmente uma mentoria com esse profissional e evoluir ainda mais o seu negócio.</p>
+      </div>
+  </div>
+    <button (click)="openSolutionDialog()">Quero uma solução </button>
+  </div>
+
+  <div class="assets">
+    <div class="asset">
+      <img src="assets/riscozero.png" width="200px" height="150px" alt="risco zero">
+      <p> Você só paga se a solução fizer sentido para você!</p>
+    </div> 
+    <div class="asset">
+      <img src="assets/mentores-fantasticos.png" width="200px" height="150px">
+      <p> Só indicamos mentores que se encaixem com o seu desafio.</p>
+    </div>
+    <div class="asset">
+      <img src="assets/precos-acessiveis.png" width="200px" height="150px" alt="">
+      <p> Você não vai precisar de investidor anjo para já começar a usar ;)</p>
+    </div>
+  </div>
+
+  <div class="diagnostic">
+    <h1>Descubra em qual estágio o seu negócio está! <span>É grátis!</span></h1>
+    <p>O Guru realiza uma avaliação do estágio de desenvolvimento do seu negócio, dividido em 7 etapas. Você recebe um selo para acompanhar a trajetória e buscar soluções Smart mais adequadas.<a href="#">Saiba mais</a></p>
+    <button (click)="openDiagnoseDialog()">Fazer diagnóstico</button>
+  </div>
+  <!-- <div class="mentors">
+
+  </div>
+  <div class="statements"></div> -->
+  <div class="be-a-mentor">
+    <h1>Seja um mentor</h1>
+    <p>Envie uma mensagem para o Guru contando as suas experiências e desafios já superados e faça parte do nosso Time de Mentores.<a href="#"> Saiba mais</a></p>
+    <button (click)="openApartofDialog()">Quero fazer parte</button>
+  </div>
+</div>
